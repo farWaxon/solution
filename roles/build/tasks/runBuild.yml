@@ -2,6 +2,4 @@
 - name: "Running mvn clean"
   shell: "mvn clean install -f /opt/git-app-folder/pom.xml"
   register: mvn_result
-- name: "mvn clean task output"
-  debug:
-    var: mvn_result
+
