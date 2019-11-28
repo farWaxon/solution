@@ -1,0 +1,5 @@
+- name: Clone repo
+  git:
+    repo: "{{ gitRepo }}"
+    dest: "{{ gitFolder }}"
+    version: master

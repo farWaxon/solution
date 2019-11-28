@@ -1,0 +1,8 @@
+---
+  - import_tasks: Remove.yml
+    tags:
+      - deploy
+      - erase
+  - import_tasks: Install.yml
+    tags:
+      - deploy

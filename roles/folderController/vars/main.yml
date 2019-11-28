@@ -1,0 +1,3 @@
+---
+ folderDocker: /opt/docker-app-folder
+ folderGit: /opt/git-app-folder

@@ -1,0 +1,12 @@
+---
+  - import_tasks: Install.yml
+    tags:
+      - deploy
+      - install_git
+  - import_tasks: Remove.yml
+    tags:
+      - remove_git
+      - erase
+  - import_tasks: Clone.yml
+    tags:
+      - deploy

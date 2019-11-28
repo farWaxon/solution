@@ -1,0 +1,10 @@
+---
+- name: Clean directory dockerfile
+  file:
+    path: "{{ folderDocker }}"
+    state: absent
+
+- name: Clean directory git
+  file:
+    path: "{{ folderGit }}"
+    state: absent

@@ -1,0 +1,10 @@
+---
+- name: Create directory for dockerfile
+  file:
+    path: "{{ folderDocker }}"
+    state: directory
+
+- name: Create directory for git
+  file:
+    path: "{{ folderGit }}"
+    state: directory

@@ -1,0 +1,5 @@
+---
+  packageName: git
+  packageLog: Git
+  gitRepo: https://github.com/trekawek/jhttp
+  gitFolder: /opt/git-app-folder

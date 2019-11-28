@@ -1,0 +1,23 @@
+---
+- name: Copy jar image
+  shell: "cp /opt/git-app-folder/target/*.jar /opt/docker-app-folder/"
+  tags:
+    - deploy
+
+- name: Copy Dockerfile
+  copy:
+    src: "{{ role_path }}/files/Dockerfile"
+    dest: /opt/docker-app-folder/
+    mode: 0644
+  tags:
+    - deploy
+
+- name: Build image
+  shell: cd /opt/docker-app-folder/ && docker build -t jhttp .
+  tags:
+    - deploy
+
+- name: Run container
+  shell: sudo docker run -it -p 80:8888 jhttp
+  tags:
+    - run_image

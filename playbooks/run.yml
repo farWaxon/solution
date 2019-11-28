@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  roles:
+    - checker
+    - folderController
+    - epel
+    - wget
+    - java
+    - maven
+    - docker
+    - git
+    - build
+    - createImage
